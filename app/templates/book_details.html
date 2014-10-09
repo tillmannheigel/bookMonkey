@@ -1,4 +1,4 @@
-<!--expressions-->
+<!--expressions
 <h2>{{book.title}}</h2>
 <h3>{{book.subtitle}}</h3>
 <p>
@@ -9,15 +9,16 @@
 		<li>Verlag: {{book.publisher.name}}</li>	
 	</ul>
 </p>
+-->
 
 <!--ng-binds-->
-<h2 ng-bind="book.title"></h2>
-<h3 ng-bind="book.subtitle"></h3>
+<h2 ng-bind="book.title" class="bm-book-title"></h2>
+<h3 ng-bind="book.subtitle" class="bm-book-subtitle"></h3>
 <p>
 	<ul>
-		<li ng-bind-template="ISBN: {{book.isbn}}"></li>
-		<li ng-bind-template="Seiten: {{book.pages}}"></li>
-		<li ng-bind-template="Autor(en): {{book.author}}"></li>
-		<li ng-bind-template="Verlag: {{book.publisher.name}}"></li>	
+		<li ng-bind-template="ISBN: {{book.isbn}}" class="bm-book-isbn"></li>
+		<li ng-bind-template="Seiten: {{book.pages}}" class="bm-book-pages"></li>
+		<li ng-bind-template="Autor(en): {{book.author}}" class="bm-book-author"></li>
+		<li ng-bind-template="Verlag: {{book.publisher}}" class="bm-book-publisher"></li>	
 	</ul>
 </p>
